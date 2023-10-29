@@ -1,0 +1,9 @@
+const fs = require('fs');
+
+// File path and content
+const filePath = 'welcome.txt';
+const fileContent = 'Hello Node';
+
+// Create the file and write content
+fs.writeFileSync(filePath, fileContent, 'utf-8');
+console.log('File "welcome.txt" has been created with content: "Hello Node"');
